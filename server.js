@@ -49,7 +49,7 @@ app.set('views', __dirname + '/views');
 app.get('/data', (req, res) => {
   // retrieve data from database
 
-  db.query('SELECT* FROM patients', (err, results) =>{
+  db.query('SELECT* FROM providers', (err, results) =>{
     if(err){
       console.error(err);
       res.status(500).send('Error Retrieving Data')
@@ -75,5 +75,5 @@ app.listen(process.env.PORT, () => {
 
   app.get('/', (req, res) => {
     res.send('Connected....server started successfully')
-  })
-})
+  });
+});

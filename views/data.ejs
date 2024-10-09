@@ -1,4 +1,5 @@
-<table>
+
+<!-- <table>
   <thead>
       <tr>
         <th>Patient ID</th>
@@ -7,6 +8,7 @@
         <th>Date of Birth</th>
       </tr>
   </thead>
+
   <tbody>
       <% results.forEach(row => {%>
         <tr>
@@ -17,4 +19,26 @@
         </tr>
       <%});%>
   </tbody>
+</table> -->
+
+
+
+<table>
+    <thead>
+        <tr>
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>Provider Specialty</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <% results.forEach(row => {%>
+          <tr>
+            <th> <%= row.first_name %> </th>
+            <th> <%= row.last_name %> </th>
+            <th> <%= row.provider_specialty %> </th>
+          </tr>
+        <%});%>    
+    </tbody>
 </table>
