@@ -23,7 +23,7 @@
 
 
 
-<table>
+<!-- <table>
     <thead>
         <tr>
           <th>First Name</th>
@@ -41,4 +41,21 @@
           </tr>
         <%});%>    
     </tbody>
+</table> -->
+
+
+<table>
+  <thead>
+      <tr>
+        <th>First Name</th>
+      </tr>
+  </thead>
+
+  <tbody>
+      <% results.forEach(row => {%>
+        <tr>
+          <th> <%= row.first_name %> </th>
+        </tr>
+      <%});%>    
+  </tbody>
 </table>
