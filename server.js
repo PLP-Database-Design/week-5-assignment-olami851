@@ -49,7 +49,7 @@ app.set('views', __dirname + '/views');
 app.get('/data', (req, res) => {
   // retrieve data from database
 
-  db.query('SELECT first_name FROM providers', (err, results) =>{
+  db.query('SELECT provider_specialty FROM providers', (err, results) =>{
     if(err){
       console.error(err);
       res.status(500).send('Error Retrieving Data')

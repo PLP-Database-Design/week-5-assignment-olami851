@@ -44,7 +44,7 @@
 </table> -->
 
 
-<table>
+<!-- <table>
   <thead>
       <tr>
         <th>First Name</th>
@@ -55,6 +55,24 @@
       <% results.forEach(row => {%>
         <tr>
           <th> <%= row.first_name %> </th>
+        </tr>
+      <%});%>    
+  </tbody>
+</table> -->
+
+
+
+<table>
+  <thead>
+      <tr>
+        <th>Provider Specialty</th>
+      </tr>
+  </thead>
+
+  <tbody>
+      <% results.forEach(row => {%>
+        <tr>
+          <th> <%= row.provider_specialty %> </th>
         </tr>
       <%});%>    
   </tbody>
